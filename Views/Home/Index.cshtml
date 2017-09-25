@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<section id="IndexPage">
+
+    
+
+    @{ 
+        if (Session["Logged"] != null)
+        {
+           using (Html.BeginForm("Results", "Search", FormMethod.Post))
+           {
+            <input type="text" name="inputText" />
+
+
+
+            <input type="submit" value="Log in" />
+
+            }
+        }
+        else
+        {
+            <div id="HeaderMainWrapper">
+                <div id="HeaderMainText">
+                    <h3>Watch Trailers</h3>
+
+                </div>
+            </div>
+        }
+
+    }
+
+
+    <div id="ButtonWrapper">
+        <div id="ButtonHolder">
+           
+           <input type="button" class="LoginButtons" title="SignUp" value="Sign Up" onclick="location.href='@Url.Action("SignUp", "Home")'" /> 
+            <input type="button" class="LoginButtons" title="Login" value="Log in" onclick="location.href='@Url.Action("Login", "Home")'" /> 
+        </div>
+    </div>  
+
+
+
+</section>

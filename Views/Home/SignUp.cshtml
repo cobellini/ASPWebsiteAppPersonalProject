@@ -1,0 +1,43 @@
+﻿@model ComicWebsite.Models.NewUser
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/HeaderFramework.cshtml";
+}
+
+<div id="SignUpFormHolder">
+
+    <div class="ErrorMessageContainer">
+        <ul>
+            <li>@Html.ValidationMessage("ErrorMessage", new { @class = "errorMessages" })</li>
+            <li>@Html.ValidationMessageFor(m => m.Email, string.Empty, new { @class = "errorMessages" })</li>
+            <li>@Html.ValidationMessageFor(m => m.Password, string.Empty, new { @class = "errorMessages" })</li>
+            <li>@Html.ValidationMessageFor(m => m.Username, string.Empty, new { @class = "errorMessages" })</li>
+        </ul>
+    </div>
+
+
+
+
+    @using (Html.BeginForm("SignUpForm", "Home", FormMethod.Post, new { id = "SignUpForm" }))
+    {
+
+        @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "SignUpFormInput", @placeholder = "Email" } })
+
+
+        @Html.PasswordFor(m => m.Password, new { @class = "SignUpFormInput", @placeholder = "Password" })
+
+        @Html.TextBoxFor(m => m.Username, new { @class = "SignUpFormInput", @placeholder = "Username" })
+
+        <input type="submit" value="Log in" class="login_Signup_Submit" />
+
+    }
+</div>
+
+
+
+
+
+
+
+
+

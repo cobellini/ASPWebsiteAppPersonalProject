@@ -1,0 +1,9 @@
+﻿@{
+    if(Session["Logged"] == null) {
+        Layout = "~/Views/Shared/HeaderFramework.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/LoggedIn_HeaderFramework.cshtml";
+    }
+}

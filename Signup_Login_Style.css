@@ -1,0 +1,70 @@
+﻿
+.ErrorMessageContainer {
+    margin-top: 5%;
+    margin-left: 27%;
+    margin-right: 20%;
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.ErrorMessageContainer li {
+   font-size: 20px;
+   list-style-type:circle;
+   display: block;
+   
+
+   
+}
+
+.errorMessages {
+    color: red;
+    
+    
+}
+
+#LoginFormHolder {
+    border: solid 3px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 2%;
+    height: 400px;
+}
+
+#LoginForm {
+    padding-left: 25%;
+    padding-top: 15%;
+    padding-right: 25%;
+}
+
+#SignUpForm {
+    padding-left: 25%;
+    padding-top: 15%;
+    padding-right: 25%;
+}
+
+#SignUpFormHolder {
+    border: solid 3px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 2%;
+    height: 400px;
+}
+
+
+.SignUpFormInput {
+    display: block;
+    margin: 1px;
+    height: 25px;
+    width: 100%;
+    padding-top: 10px;
+   
+}
+
+.login_Signup_Submit{
+    width: 100%;
+    margin: 1px;
+    margin-left: 2px;
+    height: 25px;
+}

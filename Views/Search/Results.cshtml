@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ComicWebsite.Models.Search>
+@{
+    ViewBag.Title = "Results";
+    Layout = "~/Views/Shared/LoggedIn_HeaderFramework.cshtml";
+}
+
+<h2>Results</h2>
+
+
+@foreach(var newtitle in Model){
+
+    <h1>@newtitle.MovieTitle</h1>
+    <img src=@newtitle.thumbnail />
+    <h2>@newtitle.youtubeLink</h2>
+
+}

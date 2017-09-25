@@ -1,0 +1,21 @@
+﻿#changePasswordForm{
+    margin-left: 45%;
+    margin-top: 8%;
+}
+
+#PasswordChangeForm{
+    margin-left: 45%;
+    margin-top: 5%;
+   
+}
+
+.PasswordChangeFormInput {
+    display: block;
+    width: 200px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+#PasswordChangeFormSubmit{
+    width: 200px;
+}

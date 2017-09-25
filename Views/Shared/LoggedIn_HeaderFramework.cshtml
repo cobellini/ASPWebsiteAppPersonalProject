@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HeaderFramework</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/LoggedInStyleSheetHeader.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/AccountStyle.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Signup_Login_Style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/IndexFunctions.js"></script>
+</head>
+<body>
+    <div id="NavBar">
+        <div id="NavBarList">
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Account", "AccountIndex", "AccountManagement", new { @id = "rightNav" })
+                    
+                </li>
+            </ul>
+
+            
+
+        </div>
+    </div>
+
+    <div id="BodyContainer">
+        @RenderBody()
+    </div>
+</body>
+</html>

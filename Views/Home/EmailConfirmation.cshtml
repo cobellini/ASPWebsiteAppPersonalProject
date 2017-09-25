@@ -1,0 +1,15 @@
+﻿@model ComicWebsite.Models.NewUser
+@{
+    ViewBag.Title = "EmailConfirmation";
+    Layout = "~/Views/Shared/HeaderFramework.cshtml";
+}
+
+@using (Html.BeginForm("EmailConfirmation", "Home", FormMethod.Post, new { id = "PasswordChangeForm" }))
+{
+
+    @Html.TextBoxFor(m => m.givenCode, new { @class = "PasswordChangeFormInput" })
+    @Html.ValidationMessageFor(m => m.givenCode)
+
+    <input type="submit" value="Sign me up!" id="PasswordChangeFormSubmit" />
+}
+
